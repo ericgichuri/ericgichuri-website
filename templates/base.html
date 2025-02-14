@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/eric.jpg')}}" type="image/x-icon">
+    <!--<link rel="stylesheet" href="{{url_for('static',filename='icons/font-awesome/css/font-awesome.min.css')}}">-->
+    <script src="https://use.fontawesome.com/750c2cf25d.js"></script>
+    <script src="{{url_for('static',filename='js/tailwind.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery-3.7.1.min.js')}}"></script>
+    {% block other_scripts %}{% endblock %}
+    <title>Eric Gichuri {% block title %}{% endblock %}</title>
+    <style>
+        /* Theme Colors */
+        :root {
+            --primary: #000066;
+            --secondary: #16A34A;
+            --accent: #F59E0B;
+            --bg-light: #F8FAFC;
+        }
+    </style>
+</head>
+<body class="bg-[var(--bg-light)] w-full text-gray-900">
+    <nav class="bg-[var(--primary)] text-white p-4 shadow-md border-b-[1px] border-gray-700">
+        <div class="container-full mx-auto flex justify-between items-center">
+            <a href="/" class="text-xl flex font-bold">
+                Eric Gichuri
+            </a>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="/" class="hover:text-[var(--accent)]">Home</a></li>
+                <li><a href="/projects" class="hover:text-[var(--accent)]">Projects</a></li>
+                <li><a href="/services" class="hover:text-[var(--accent)]">Services</a></li>
+                <li><a href="/contact" class="hover:text-[var(--accent)]">Contact</a></li>
+                <li><a href="https://github.com/ericgichuri" class="bg-[var(--secondary)] px-4 py-2 rounded hover:bg-green-700"><i class="fa fa-github px-2"></i>Github</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[var(--primary)] p-4">
+            <a href="/" class="block py-2 hover:text-[var(--accent)]">Home</a>
+            <a href="/projects" class="block py-2 hover:text-[var(--accent)]">Projects</a>
+            <a href="/services" class="block py-2 hover:text-[var(--accent)]">Services</a>
+            <a href="/contact" class="block py-2 hover:text-[var(--accent)]">Contact</a>
+            <a href="https://github.com/ericgichuri" class="block bg-[var(--secondary)] px-4 py-2 rounded text-center hover:bg-green-700"><i class="fa fa-github px-2"></i>Github</a>
+        </div>
+    </nav>
+
+    <!-- ✅ Page Content -->
+    <main class="containekr w-full">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-[var(--primary)] text-white p-6 text-center">
+        <p>&copy; 2025 Eric Gichuri. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ✅ jQuery for Mobile Menu -->
+    <script>
+        $(document).ready(function () {
+            $("#menu-toggle").click(function () {
+                $("#mobile-menu").toggleClass("hidden");
+            });
+        });
+    </script>
+</body>
+</html>

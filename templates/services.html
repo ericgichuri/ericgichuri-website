@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}- Services{% endblock %}
+
+{% block content %}
+<div class="w-full py-8 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+        <h1 class="text-3xl font-bold mb-2 text-[var(--primary)]">Services I Offer</h1>
+        <p class="text-lg mb-6">I offer a range of services to help bring your ideas to life. Whether you're looking to build a website, design graphics, or analyze data, I'm here to help you achieve your goals.</p>
+
+        <div class="mb-3">
+            <h2 class="text-2xl font-semibold mb-4">Web Development</h2>
+            <p class="text-lg">I create custom websites tailored to your needs, using modern technologies to build responsive, user-friendly, and fast-loading websites.</p>
+        </div>
+        <div class="mb-3">
+            <h2 class="text-2xl font-semibold mb-4">Web Design</h2>
+            <p class="text-lg">I design beautiful and intuitive websites that offer a seamless user experience. From UI/UX design to prototyping, I ensure your website stands out.</p>
+        </div>
+        <div class="mb-3">
+            <h2 class="text-2xl font-semibold mb-4">Desktop Application Development</h2>
+            <p class="text-lg">I develop cross-platform desktop applications that are efficient, secure, and designed with your user in mind. From concept to deployment, I guide you every step of the way.</p>
+        </div>
+        <div class="mb-3">
+            <h2 class="text-2xl font-semibold mb-4">Data Analysis</h2>
+            <p class="text-lg">I provide data analysis services to help you make informed decisions. From cleaning data to creating actionable insights, I turn your data into valuable business intelligence.</p>
+        </div>
+        <div class="mb-3">
+            <h2 class="text-2xl font-semibold mb-4">Graphic Design</h2>
+            <p class="text-lg mb-4">Whether it's creating eye-catching posters, flyers, or business cards, I design graphics that communicate your brand and message effectively.</p>
+            <ul class="list-disc text-lg pl-6">
+                <li>Posters</li>
+                <li>Flyers</li>
+                <li>Business Cards</li>
+                <li>Brand Identity & More</li>
+            </ul>
+        </div>
+        <div class="mt-2">
+            <p class="text-lg">If you are interested in any of the services above or have a custom project in mind, feel free to <br>
+                <a href="/contact" class="bg-[var(--primary)] text-white px-3 py-2 text-sm rounded-md hover:bg-blue-700">contact me</a>.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

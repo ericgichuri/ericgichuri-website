@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block title %}- Projects{% endblock %}
+
+{% block content %}
+<div class="w-full p-2">
+    <h1 class="text-3xl text-[var(--primary)]">Projects</h1>
+    <p>Check out some of my work</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-2">
+        <!-- Project 1 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="{{url_for('static',filename='images/projects/ecommerce.jpg')}}" alt="Project 1" class="w-full h-48 object-contain1">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-[var(--primary)]">E-commerce Website</h3>
+                <p class="text-sm text-gray-600">A fully responsive e-commerce platform designed for small businesses to manage products and sales.</p>
+                <a href="javascript:void(0)" class="text-[var(--primary)] font-semibold mt-3 inline-block">Read More</a>
+            </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="{{url_for('static',filename='images/projects/ecourseflow.jpg')}}" alt="Project 2" class="w-full h-48 object-contain1">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-[var(--primary)]">ECourseFlow Learning</h3>
+                <p class="text-sm text-gray-600">A online learning management system showcasing my web development work on learning.</p>
+                <a href="javascript:void(0)" class="text-[var(--primary)] font-semibold mt-3 inline-block">Read More</a>
+            </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="{{url_for('static',filename='images/projects/housebooking.jpg')}}" alt="Project 3" class="w-full h-48 object-contain1">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-[var(--primary)]">HConnect house booking</h3>
+                <p class="text-sm text-gray-600">A wep application to ease users in searching of house to rent in their area of interest</p>
+                <a href="javascript:void(0)" class="text-[var(--primary)] font-semibold mt-3 inline-block">Read More</a>
+            </div>
+        </div>
+        <!-- Project 4 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="{{url_for('static',filename='images/projects/facerecognition.png')}}" alt="Project 4" class="w-full h-48 object-contain1">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-[var(--primary)]">Face Recognition system</h3>
+                <p class="text-sm text-gray-600">A Face recognition based class attendance system a AI system that marks student attendance in a class.</p>
+                <a href="javascript:void(0)" class="text-[var(--primary)] font-semibold mt-3 inline-block">Read More</a>
+            </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="{{url_for('static',filename='images/projects/pos.png')}}" alt="Project 5" class="w-full h-48 object-contain1">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-[var(--primary)]">Point Of sales (POS)</h3>
+                <p class="text-sm text-gray-600">A multi store POS to manage sales within a store or shop with inventory, expiry alerts</p>
+                <a href="javascript:void(0)" class="text-[var(--primary)] font-semibold mt-3 inline-block">Read More</a>
+            </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="{{url_for('static',filename='images/projects/school.png')}}" alt="Project 1" class="w-full h-48 object-contain1">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-[var(--primary)]">School MIS</h3>
+                <p class="text-sm text-gray-600">A fully responsive e-commerce platform designed for small businesses to manage products and sales.</p>
+                <a href="javascript:void(0)" class="text-[var(--primary)] font-semibold mt-3 inline-block">Read More</a>
+            </div>
+        </div>
+        <!-- Project 6 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="{{url_for('static',filename='images/projects/church.png')}}" alt="Project 2" class="w-full h-48 object-contain1">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-[var(--primary)]">Church Management system</h3>
+                <p class="text-sm text-gray-600">A online learning management system showcasing my web development work on learning.</p>
+                <a href="javascript:void(0)" class="text-[var(--primary)] font-semibold mt-3 inline-block">Read More</a>
+            </div>
+        </div>
+        <!-- Project 7 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="{{url_for('static',filename='images/projects/loancollection.jpg')}}" alt="Project 3" class="w-full h-48 object-contain1">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-[var(--primary)]">Loan Message Suggestion</h3>
+                <p class="text-sm text-gray-600">A wep application to ease users in searching of house to rent in their area of interest</p>
+                <a href="javascript:void(0)" class="text-[var(--primary)] font-semibold mt-3 inline-block">Read More</a>
+            </div>
+        </div>
+        <!-- Project 8 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="{{url_for('static',filename='images/projects/carhire.png')}}" alt="Project 4" class="w-full h-48 object-contain1">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-[var(--primary)]">Car Hire system</h3>
+                <p class="text-sm text-gray-600">A Face recognition based class attendance system a AI system that marks student attendance in a class.</p>
+                <a href="javascript:void(0)" class="text-[var(--primary)] font-semibold mt-3 inline-block">Read More</a>
+            </div>
+        </div>
+        <!-- Project 9 -->
+        <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <img src="{{url_for('static',filename='images/projects/essphotoeditor.png')}}" alt="Project 5" class="w-full h-48 object-contain1">
+            <div class="p-4">
+                <h3 class="text-lg font-bold text-[var(--primary)]">ESS Photo Editor</h3>
+                <p class="text-sm text-gray-600">A multi store POS to manage sales within a store or shop with inventory, expiry alerts</p>
+                <a href="javascript:void(0)" class="text-[var(--primary)] font-semibold mt-3 inline-block">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
